@@ -137,7 +137,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Row-->
 									<div class="row g-5 g-xl-10 mb-5 mb-xl-10">
 										<!--begin::Col-->
-										<h1>empty page</h1>
+										@yield('content');
 										<!--end::Col-->
 									</div>
 									<!--end::Row-->
