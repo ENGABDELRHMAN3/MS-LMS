@@ -13,9 +13,6 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::group(['prefix' => LaravelLocalization::setLocale(),
-'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function()
-{
 Route::view('/', 'welcome');
 
 Route::view('dashboard', 'dashboard')
@@ -29,7 +26,7 @@ Route::view('profile', 'profile')
 
 Route::view('profileaaa', 'profile')
     ->middleware(['auth']);
-});
+
 
 
 
